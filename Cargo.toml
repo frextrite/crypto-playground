@@ -4,11 +4,11 @@ version = "0.1.0"
 edition = "2024"
 
 [[bin]]
-name = "sample_ring"
+name = "example_ring"
 path = "src/ring/main.rs"
 
 [[bin]]
-name = "sample_multi"
+name = "example_multi"
 path = "src/multi/main.rs"
 
 [dependencies]
