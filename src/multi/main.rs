@@ -4,7 +4,7 @@ use hkdf::Hkdf;
 use sha2::Sha256;
 use x25519_dalek::{EphemeralSecret, PublicKey};
 
-fn main() -> anyhow::Result<()> {
+fn main() {
     let rng = OsRng;
 
     // 1. Generate public / private key pair using curve25519
@@ -123,6 +123,4 @@ fn main() -> anyhow::Result<()> {
     println!("Decrypted plaintext length: {}", decrypted_message.len());
 
     println!("✅ Message decrypted successfully and matches the original plaintext.");
-
-    Ok(())
 }
